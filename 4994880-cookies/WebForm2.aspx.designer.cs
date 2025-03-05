@@ -11,7 +11,7 @@ namespace _4994880_cookies
 {
 
 
-	public partial class WebForm1
+	public partial class WebForm2
 	{
 
 		/// <summary>

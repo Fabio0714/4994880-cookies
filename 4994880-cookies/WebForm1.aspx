@@ -19,7 +19,7 @@
                         <asp:Label runat="server"  Text="Category:" ></asp:Label>
                     </asp:TableCell>
                     <asp:TableCell>
-                        <asp:DropDownList ID="ddlcategory" runat="server">
+                        <asp:DropDownList  runat="server" Id="ddlCategory">
                             <asp:ListItem Text="Raquets" Value="Raquets"></asp:ListItem>
                             <asp:ListItem Text="Footwear-Women's" Value="Footwear-Women's"></asp:ListItem>
                         </asp:DropDownList>
@@ -31,7 +31,7 @@
                         <asp:Label runat="server"  Text="Supplier:" ></asp:Label>
                     </asp:TableCell>
                     <asp:TableCell>
-                        <asp:DropDownList ID="ddlSupplier" runat="server">
+                        <asp:DropDownList runat="server" Id="ddlSupplier" >
                             <asp:ListItem Text="Nike" Value="Nike"></asp:ListItem>
                             <asp:ListItem Text="Adidas" Value="Adidas"></asp:ListItem>
                         </asp:DropDownList>
@@ -101,14 +101,8 @@
                     </asp:TableCell>
                 </asp:TableRow>
 
-                <asp:TableFooterRow>
-                    <asp:TableCell>
-            <asp:Button runat="server" ID="btnConfirm" Text="Confirm" OnClick="btnConfirm_Click" />
-                    </asp:TableCell>
-                </asp:TableFooterRow>
-
             </asp:Table>
- 
+            <asp:Button runat="server" ID="btnConfirm" Text="Confirm" OnClik="" OnClick="btnConfirm_Click" />
 
         </div>
     </form>
