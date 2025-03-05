@@ -12,58 +12,102 @@
         <div>
             <h2>Enter Product</h2>
 
-            <asp:Label runat="server"  Text="Category:" ></asp:Label>
-            <asp:DropDownList ID="ddlcategory" runat="server">
-                <asp:ListItem Text="Raquets" Value="Raquets"></asp:ListItem>
-                <asp:ListItem Text="Footwear-Women's" Value="Footwear-Women's"></asp:ListItem>
-            </asp:DropDownList>
+            <asp:Table runat="server" >
 
-            <br />
+                <asp:TableRow>
+                    <asp:TableCell>
+                        <asp:Label runat="server"  Text="Category:" ></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:DropDownList ID="ddlcategory" runat="server">
+                            <asp:ListItem Text="Raquets" Value="Raquets"></asp:ListItem>
+                            <asp:ListItem Text="Footwear-Women's" Value="Footwear-Women's"></asp:ListItem>
+                        </asp:DropDownList>
+                    </asp:TableCell>
+                </asp:TableRow>
 
-            <asp:Label runat="server"  Text="Supplier:" ></asp:Label>
-            <asp:DropDownList ID="ddlSupplier" runat="server">
-                <asp:ListItem Text="Nike" Value="Nike"></asp:ListItem>
-                <asp:ListItem Text="Adidas" Value="Adidas"></asp:ListItem>
-            </asp:DropDownList>
+                <asp:TableRow>
+                    <asp:TableCell>
+                        <asp:Label runat="server"  Text="Supplier:" ></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:DropDownList ID="ddlSupplier" runat="server">
+                            <asp:ListItem Text="Nike" Value="Nike"></asp:ListItem>
+                            <asp:ListItem Text="Adidas" Value="Adidas"></asp:ListItem>
+                        </asp:DropDownList>
+                    </asp:TableCell>
+                </asp:TableRow>
 
-            <br />
+                <asp:TableRow>
+                    <asp:TableCell>
+                           <asp:Label runat="server"  Text="Product"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                           <asp:TextBox runat="server" ID="txtProduct"></asp:TextBox>
+                    </asp:TableCell>
+                </asp:TableRow>
 
-            <asp:Label runat="server"  Text="Product"></asp:Label>
-            <asp:TextBox runat="server" ID="txtProduct"></asp:TextBox>
+                <asp:TableRow>
+                    <asp:TableCell>
+                             <asp:Label runat="server"  Text="Description"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                              <asp:TextBox runat="server" ID="txtDescription" TextMode="MultiLine" Rows="4"></asp:TextBox>
+                    </asp:TableCell>
+                </asp:TableRow>
 
-            <br />
+                <asp:TableRow>
+                    <asp:TableCell>
+                                <asp:Label runat="server"  Text="Image"></asp:Label>
+                     </asp:TableCell>  
+                     <asp:TableCell>
+                          <asp:TextBox runat="server" ID="txtImage"></asp:TextBox>
+                    </asp:TableCell>
+                </asp:TableRow>
 
-            <asp:Label runat="server"  Text="Description"></asp:Label>
-            <asp:TextBox runat="server" ID="txtDescription" TextMode="MultiLine" Rows="4"></asp:TextBox>
+                <asp:TableRow>
+                    <asp:TableCell>
+                        <asp:Label runat="server"  Text="Price"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                         <asp:TextBox runat="server" ID="txtPrice"></asp:TextBox>
+                    </asp:TableCell>
+                </asp:TableRow>
 
-            <br />
+                <asp:TableRow>
+                    <asp:TableCell>
+                         <asp:Label runat="server" Text="Number in Stock"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                           <asp:Textbox runat="server" ID="txtNumberInStock"></asp:Textbox>
+                    </asp:TableCell>
+                </asp:TableRow>
+          
+                <asp:TableRow>
+                    <asp:TableCell>
+                            <asp:Label runat="server"  Text="Number on Order"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                         <asp:TextBox runat="server" ID="txtNumberOnOrder"></asp:TextBox>    
+                    </asp:TableCell>
+                </asp:TableRow>
+           
+                <asp:TableRow>
+                    <asp:TableCell>
+                       <asp:Label runat="server"  Text="Reorder Level"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                       <asp:TextBox runat="server" ID="txtReorderLevel"></asp:TextBox>
+                    </asp:TableCell>
+                </asp:TableRow>
 
-            <asp:Label runat="server"  Text="Image"></asp:Label>
-             <asp:TextBox runat="server" ID="txtImage"></asp:TextBox>
-
-            <br />
-
-            <asp:Label runat="server"  Text="Price"></asp:Label>
-            <asp:TextBox runat="server" ID="txtPrice"></asp:TextBox>
-
-            <br />
-
-            <asp:Label runat="server" Text="Number in Stock"></asp:Label>
-            <asp:Textbox runat="server" ID="txtNumberInStock"></asp:Textbox>
-
-            <br />
-
-            <asp:Label runat="server"  Text="Number on Order"></asp:Label>
-            <asp:TextBox runat="server" ID="txtNumberOnOrder"></asp:TextBox>
-
-            <br />
-
-            <asp:Label runat="server"  Text="Reorder Level"></asp:Label>
-            <asp:TextBox runat="server" ID="txtReorderLevel"></asp:TextBox>
-
-            <br />
-
+                <asp:TableFooterRow>
+                    <asp:TableCell>
             <asp:Button runat="server" ID="btnConfirm" Text="Confirm" OnClick="btnConfirm_Click" />
+                    </asp:TableCell>
+                </asp:TableFooterRow>
+
+            </asp:Table>
  
 
         </div>
